@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stu.inventedteam"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-sdk android:minSdkVersion="11" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.stu.inventedteam.MemberLoginActivity" >
+        </activity>
+        <activity android:name="com.stu.inventedteam.MemberRegisterActivity" >
+        </activity>
+        <activity android:name="com.stu.inventedteam.OrgLoginActivity" >
+        </activity>
+        <activity android:name="com.stu.inventedteam.OrgRegisterActivity" >
+        </activity>
+        <activity android:name="com.stu.inventedteam.OrgMainActivity" >
+        </activity>
+        <activity android:name="com.stu.inventedteam.MemberMainActivity" >
+        </activity>
+        <activity android:name="com.stu.inventedteam.PublishActionActivity" >
+        </activity>
+        <activity android:name="com.stu.inventedteam.OrgActionActivity" >
+        </activity>
+        <activity android:name="com.stu.inventedteam.MyOrgListActivity" >
+        </activity>
+        <activity android:name="com.stu.inventedteam.MemberNonActivity" >
+        </activity>
+        <activity android:name="com.stu.inventedteam.AddActionActivity" >
+        </activity>
+        <activity android:name="com.stu.inventedteam.ShareActionActivity" >
+        </activity>
+        <activity android:name="com.stu.inventedteam.NewActtionActivity" >
+        </activity>
+        <activity android:name="com.stu.inventedteam.ActionResultActivity" >
+        </activity>
+    </application>
+
+</manifest>
